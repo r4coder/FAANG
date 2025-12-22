@@ -12,6 +12,8 @@ int solve(int ind,vector<int>&heights,int dp[])
     {
         return dp[ind];
     }
+
+    int two=INT_MAX;
     
    int one=solve(ind-1,heights,dp)+abs(heights[ind]-heights[ind]-1);
   
