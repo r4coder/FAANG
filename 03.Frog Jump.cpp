@@ -15,11 +15,11 @@ int solve(int ind,vector<int>&heights,int dp[])
 
     int two=INT_MAX;
     
-   int one=solve(ind-1,heights,dp)+abs(heights[ind]-heights[ind]-1);
+   int one=solve(ind-1,heights,dp)+abs(heights[ind]-heights[ind-1]);
   
    if(ind>1)
    {
-   two=solve(ind-2,heights,dp)+abs(heights[ind]-heights[ind]-1);
+   two=solve(ind-2,heights,dp)+abs(heights[ind]-heights[ind-2]);
    
    }
    
