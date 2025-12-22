@@ -19,7 +19,7 @@ int solve(int ind,vector<int>&heights,int dp[])
   
    if(ind>1)
    {
-   int two=solve(ind-2,heights,dp)+abs(heights[ind]-heights[ind]-1);
+   two=solve(ind-2,heights,dp)+abs(heights[ind]-heights[ind]-1);
    
    }
    
